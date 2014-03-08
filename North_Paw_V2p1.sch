@@ -453,62 +453,6 @@ SOT-23 Lithium Polymer charging IC. Schematic element and footprint proven. Spar
 </deviceset>
 </devicesets>
 </library>
-<library name="OS202011MA0QS1">
-<packages>
-<package name="OS202011MA0QS1">
-<wire x1="-4.445" y1="3.429" x2="4.445" y2="3.429" width="0.127" layer="21"/>
-<wire x1="4.445" y1="3.429" x2="4.445" y2="-3.429" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-3.429" x2="-4.445" y2="-3.429" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-3.429" x2="-4.445" y2="3.429" width="0.127" layer="21"/>
-<pad name="2" x="0" y="1.2446" drill="0.8" diameter="1.016" shape="square"/>
-<pad name="1" x="-2.0066" y="1.2446" drill="0.8" diameter="1.016" shape="square"/>
-<pad name="3" x="2.0066" y="1.2446" drill="0.8" diameter="1.016" shape="square"/>
-<pad name="6" x="2.0066" y="-1.2446" drill="0.8" diameter="1.016" shape="square"/>
-<pad name="5" x="0" y="-1.2446" drill="0.8" diameter="1.016" shape="square"/>
-<pad name="4" x="-2.0066" y="-1.2446" drill="0.8" diameter="1.016" shape="square"/>
-<pad name="P$1" x="4.1021" y="0" drill="1.4986" diameter="2.032"/>
-<pad name="P$2" x="-4.1021" y="0" drill="1.4986" diameter="2.032"/>
-<text x="-1.27" y="-5.08" size="1.016" layer="27" font="vector">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="OS202011MA0QS1">
-<wire x1="-6.985" y1="3.429" x2="6.985" y2="3.429" width="0.254" layer="94"/>
-<wire x1="6.985" y1="3.429" x2="6.985" y2="-3.429" width="0.254" layer="94"/>
-<wire x1="6.985" y1="-3.429" x2="-6.985" y2="-3.429" width="0.254" layer="94"/>
-<wire x1="-6.985" y1="-3.429" x2="-6.985" y2="3.429" width="0.254" layer="94"/>
-<text x="-1.016" y="-2.032" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="5.08" visible="pad" length="short" direction="pwr" rot="R270"/>
-<pin name="2" x="0" y="5.08" visible="pad" length="short" direction="pwr" rot="R270"/>
-<pin name="3" x="5.08" y="5.08" visible="pad" length="short" direction="pwr" rot="R270"/>
-<pin name="4" x="-5.08" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
-<pin name="5" x="0" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
-<pin name="6" x="5.08" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="OS202011MA0QS1">
-<gates>
-<gate name="G$1" symbol="OS202011MA0QS1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OS202011MA0QS1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="North_Paw">
 <packages>
 <package name="FE05-2">
@@ -7434,19 +7378,316 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Electromechanical">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SWITCH-SPDT">
+<wire x1="2.175" y1="5.815" x2="-2.175" y2="5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="5.815" x2="-2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="-5.815" x2="2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="2.175" y1="-5.815" x2="2.175" y2="5.815" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="0" y="-2.54" drill="1.016" diameter="1.8796"/>
+<text x="-3.81" y="7.62" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="AYZ0202">
+<description>&lt;b&gt;DPDT Slide Switch SMD&lt;/b&gt;
+www.SparkFun.com SKU : Comp-SMDS</description>
+<wire x1="-3.6" y1="1.75" x2="-3.6" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="-3.6" y1="-1.75" x2="3.6" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="-1.75" x2="3.6" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="1.75" x2="-3.6" y2="1.75" width="0.2032" layer="21"/>
+<smd name="3" x="2.5" y="2.825" dx="1" dy="1.15" layer="1"/>
+<smd name="2" x="0" y="2.825" dx="1" dy="1.15" layer="1"/>
+<smd name="1" x="-2.5" y="2.825" dx="1" dy="1.15" layer="1"/>
+<smd name="6" x="2.5" y="-2.825" dx="1" dy="1.15" layer="1"/>
+<smd name="5" x="0" y="-2.825" dx="1" dy="1.15" layer="1"/>
+<smd name="4" x="-2.5" y="-2.825" dx="1" dy="1.15" layer="1"/>
+<text x="-2.54" y="1.143" size="0.4064" layer="25">&gt;Name</text>
+<text x="0.508" y="1.143" size="0.4064" layer="27">&gt;Value</text>
+<hole x="1.5" y="0" drill="0.85"/>
+<hole x="-1.5" y="0" drill="0.85"/>
+</package>
+<package name="SWITCHE-DPDT">
+<wire x1="8" y1="3.25" x2="-8" y2="3.25" width="0.127" layer="51"/>
+<wire x1="-8" y1="3.25" x2="-8" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="-8" y1="-3.25" x2="8" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="8" y1="-3.25" x2="8" y2="3.25" width="0.127" layer="51"/>
+<wire x1="-6" y1="3.25" x2="6" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="8" y1="1" x2="8" y2="-1" width="0.2032" layer="21"/>
+<wire x1="6" y1="-3.25" x2="-6" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="-8" y1="-1" x2="-8" y2="1" width="0.2032" layer="21"/>
+<pad name="P$1" x="-7.5" y="3" drill="1.5" diameter="2.54"/>
+<pad name="P$2" x="-7.5" y="-3" drill="1.5" diameter="2.54"/>
+<pad name="P$3" x="7.5" y="3" drill="1.5" diameter="2.54"/>
+<pad name="P$4" x="7.5" y="-3" drill="1.5" diameter="2.54"/>
+<pad name="1" x="-4" y="1.25" drill="0.7" diameter="1.6764"/>
+<pad name="2" x="0" y="1.25" drill="0.7" diameter="1.6764"/>
+<pad name="3" x="4" y="1.25" drill="0.7" diameter="1.6764"/>
+<pad name="4" x="-4" y="-1.25" drill="0.7" diameter="1.6764"/>
+<pad name="5" x="0" y="-1.25" drill="0.7" diameter="1.6764"/>
+<pad name="6" x="4" y="-1.25" drill="0.7" diameter="1.6764"/>
+</package>
+<package name="R_SW_TH">
+<wire x1="-1.651" y1="19.2532" x2="-1.651" y2="-1.3716" width="0.2032" layer="21"/>
+<wire x1="-1.651" y1="-1.3716" x2="-1.651" y2="-2.2352" width="0.2032" layer="21"/>
+<wire x1="-1.651" y1="19.2532" x2="13.589" y2="19.2532" width="0.2032" layer="21"/>
+<wire x1="13.589" y1="19.2532" x2="13.589" y2="-2.2352" width="0.2032" layer="21"/>
+<wire x1="13.589" y1="-2.2352" x2="-1.651" y2="-2.2352" width="0.2032" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.6002"/>
+<pad name="P$2" x="0" y="16.9926" drill="1.6002"/>
+<pad name="P$3" x="12.0904" y="15.494" drill="1.6002"/>
+<pad name="P$4" x="12.0904" y="8.4582" drill="1.6002"/>
+</package>
+<package name="SWITCH-SPDT-SMD">
+<wire x1="-4.5" y1="1.75" x2="-4.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-1.75" x2="4.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="4.5" y1="-1.75" x2="4.5" y2="1.75" width="0.127" layer="51"/>
+<wire x1="4.5" y1="1.75" x2="2" y2="1.75" width="0.127" layer="51"/>
+<wire x1="2" y1="1.75" x2="0.5" y2="1.75" width="0.127" layer="51"/>
+<wire x1="0.5" y1="1.75" x2="-4.5" y2="1.75" width="0.127" layer="51"/>
+<wire x1="0.5" y1="1.75" x2="0.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="0.5" y1="3.75" x2="2" y2="3.75" width="0.127" layer="51"/>
+<wire x1="2" y1="3.75" x2="2" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-4" y1="-1.75" x2="-4.5" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="-1.75" x2="-4.5" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="1.75" x2="4.5" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="1.75" x2="4.5" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="-1.75" x2="4" y2="-1.75" width="0.2032" layer="21"/>
+<smd name="1" x="-2.5" y="-2.75" dx="1.2" dy="2.5" layer="1" rot="R180"/>
+<smd name="2" x="0" y="-2.75" dx="1.2" dy="2.5" layer="1" rot="R180"/>
+<smd name="3" x="2.5" y="-2.75" dx="1.2" dy="2.5" layer="1" rot="R180"/>
+<text x="-1.27" y="0.635" size="0.6096" layer="25">&gt;Name</text>
+<text x="-1.27" y="-1.27" size="0.6096" layer="27">&gt;Value</text>
+<hole x="-3.55" y="0" drill="0.9"/>
+<hole x="3.55" y="0" drill="0.9"/>
+</package>
+<package name="SWITCH-SPDT_LOCK.007S">
+<wire x1="2.175" y1="5.815" x2="-2.175" y2="5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="5.815" x2="-2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="-5.815" x2="2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="2.175" y1="-5.815" x2="2.175" y2="5.815" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="2.7178" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="0" y="-2.7178" drill="1.016" diameter="1.8796"/>
+<text x="-3.81" y="7.62" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="-0.3048" x2="0.2286" y2="0.3048" layer="51"/>
+<rectangle x1="-0.2286" y1="2.2352" x2="0.2286" y2="2.8448" layer="51"/>
+<rectangle x1="-0.2286" y1="-2.8448" x2="0.2286" y2="-2.2352" layer="51"/>
+</package>
+<package name="SWITCH-SPDT_KIT">
+<description>&lt;h3&gt;SWITCH-SPDT_KIT&lt;/h3&gt;
+Through-hole SPDT Switch&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
+<wire x1="2.175" y1="5.815" x2="-2.175" y2="5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="5.815" x2="-2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="-5.815" x2="2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="2.175" y1="-5.815" x2="2.175" y2="5.815" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="2.7178" drill="1.016" diameter="1.8796" stop="no"/>
+<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796" stop="no"/>
+<pad name="3" x="0" y="-2.7178" drill="1.016" diameter="1.8796" stop="no"/>
+<text x="-3.81" y="7.62" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="-0.3048" x2="0.2286" y2="0.3048" layer="51"/>
+<rectangle x1="-0.2286" y1="2.2352" x2="0.2286" y2="2.8448" layer="51"/>
+<rectangle x1="-0.2286" y1="-2.8448" x2="0.2286" y2="-2.2352" layer="51"/>
+<polygon width="0.127" layer="30">
+<vertex x="-0.0178" y="1.8414" curve="-90.039946"/>
+<vertex x="-0.8787" y="2.6975" curve="-90"/>
+<vertex x="-0.0026" y="3.5916" curve="-90.006409"/>
+<vertex x="0.8738" y="2.6975" curve="-90.03214"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-0.0051" y="-3.5967" curve="-90.006558"/>
+<vertex x="-0.8788" y="-2.7431" curve="-90.037923"/>
+<vertex x="0.0128" y="-1.8363" curve="-90.006318"/>
+<vertex x="0.8814" y="-2.7432" curve="-90.038792"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-0.0102" y="-0.8738" curve="-90.019852"/>
+<vertex x="-0.8762" y="-0.0203" curve="-90.019119"/>
+<vertex x="0.0153" y="0.8789" curve="-90"/>
+<vertex x="0.8739" y="-0.0077" curve="-90.038897"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="2.2758" curve="-90.012891"/>
+<vertex x="-0.4445" y="2.7" curve="-90"/>
+<vertex x="0" y="3.1673" curve="-90"/>
+<vertex x="0.4419" y="2.7102" curve="-90.012967"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.0026" y="-3.1648" curve="-90.012891"/>
+<vertex x="-0.4419" y="-2.7406" curve="-90"/>
+<vertex x="0.0026" y="-2.2733" curve="-90"/>
+<vertex x="0.4445" y="-2.7304" curve="-90.012967"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.0102" y="-0.4471" curve="-90.012891"/>
+<vertex x="-0.4343" y="-0.0229" curve="-90"/>
+<vertex x="0.0102" y="0.4444" curve="-90"/>
+<vertex x="0.4521" y="-0.0127" curve="-90.012967"/>
+</polygon>
+</package>
+<package name="SWITCH-SPST-SMD-A">
+<wire x1="-3.35" y1="1.3" x2="-3.35" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-3.35" y1="-1.3" x2="3.35" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="3.35" y1="-1.3" x2="3.35" y2="1.3" width="0.127" layer="51"/>
+<wire x1="3.35" y1="1.3" x2="-0.1" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.3" x2="-1.4" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="1.3" x2="-3.35" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.3" x2="-0.1" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="2.8" x2="-1.4" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="2.8" x2="-1.4" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-3.35" y1="0.3" x2="-3.35" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="3.35" y1="0.3" x2="3.35" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="1.3" x2="-2.7" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="0" y2="-1.3" width="0.2032" layer="21"/>
+<smd name="1" x="-2.25" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="2" x="-0.75" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="3" x="2.25" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="GND1" x="-3.65" y="1" dx="1" dy="0.6" layer="1"/>
+<smd name="GND2" x="-3.65" y="-1.1" dx="1" dy="0.8" layer="1"/>
+<smd name="GND3" x="3.65" y="1" dx="1" dy="0.6" layer="1"/>
+<smd name="GND4" x="3.65" y="-1.1" dx="1" dy="0.8" layer="1"/>
+<text x="-1.27" y="0.635" size="0.6096" layer="25">&gt;Name</text>
+<text x="-1.27" y="-1.27" size="0.6096" layer="27">&gt;Value</text>
+<hole x="-1.5" y="0" drill="0.9"/>
+<hole x="1.5" y="0" drill="0.9"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TOGGLE">
+<wire x1="0" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<text x="-1.905" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="O" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SWITCH-SPDT" prefix="S" uservalue="yes">
+<description>&lt;b&gt;SPDT Switch&lt;/b&gt;&lt;br&gt;
+Simple slide switch, Spark Fun Electronics SKU : COM-00102&lt;br&gt;
+DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
+<gates>
+<gate name="1" symbol="TOGGLE" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="PTH" package="SWITCH-SPDT">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="AYZ0202">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-08179" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH2" package="SWITCHE-DPDT">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH3" package="R_SW_TH">
+<connects>
+<connect gate="1" pin="O" pad="P$1"/>
+<connect gate="1" pin="P" pad="P$2"/>
+<connect gate="1" pin="S" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD2" package="SWITCH-SPDT-SMD">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH_LOCK" package="SWITCH-SPDT_LOCK.007S">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KIT" package="SWITCH-SPDT_KIT">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-08261" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMD-A" package="SWITCH-SPST-SMD-A">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.381" drill="0">
+<class number="0" name="default" width="0.381" drill="0.508">
 <clearance class="0" value="0.381"/>
 </class>
-<class number="1" name="power" width="0.508" drill="0">
+<class number="1" name="power" width="0.508" drill="0.508">
 <clearance class="1" value="0.381"/>
 </class>
-<class number="2" name="ground" width="0.508" drill="0">
+<class number="2" name="ground" width="0.508" drill="0.508">
 <clearance class="2" value="0.381"/>
 </class>
 </classes>
@@ -7456,42 +7697,111 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
-<part name="FTDI" library="SparkFun" deviceset="ARDUINO_SERIAL_PROGRAM" device="PTH" value="FTDI Basic"/>
+<part name="FTDI" library="SparkFun" deviceset="ARDUINO_SERIAL_PROGRAM" device="PTH" value="FTDI Basic">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
-<part name="SWITCH" library="OS202011MA0QS1" deviceset="OS202011MA0QS1" device=""/>
 <part name="P+7" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+3" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="MOTORS" library="North_Paw" deviceset="FE05-2" device=""/>
-<part name="CHARGER" library="SparkFun" deviceset="MAX1555" device=""/>
+<part name="MOTORS" library="North_Paw" deviceset="FE05-2" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="CHARGER" library="SparkFun" deviceset="MAX1555" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="MAX1555EZK+T."/>
+<attribute name="OC_NEWARK" value="26R6103"/>
+</part>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+4" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
-<part name="JST(PWR)" library="North_Paw" deviceset="S2B-PH-K-S" device="" value=""/>
-<part name="LSM303-HEADERS" library="North_Paw" deviceset="MA09-1W" device="" value="M09"/>
-<part name="SR1" library="Texas Instruments_By_element14_Batch_1" deviceset="TPIC6C595D" device=""/>
+<part name="JST(PWR)" library="North_Paw" deviceset="S2B-PH-K-S" device="" value="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="LSM303-HEADERS" library="North_Paw" deviceset="MA09-1W" device="" value="M09">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="SR1" library="Texas Instruments_By_element14_Batch_1" deviceset="TPIC6C595D" device="">
+<attribute name="MF" value="TEXAS INSTRUMENTS"/>
+</part>
 <part name="P+6" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
-<part name="ATMEGA" library="atmega8" deviceset="ATMEGA48/88/168" device="-AU"/>
-<part name="C6" library="adafruit" deviceset="C-US" device="C0805" value="100uf"/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R0805" value="330"/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="LED3" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED"/>
-<part name="LED4" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
+<part name="ATMEGA" library="atmega8" deviceset="ATMEGA48/88/168" device="-AU">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="C6" library="adafruit" deviceset="C-US" device="C0805" value="100uf">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="TLCR107M004XTA"/>
+<attribute name="OC_NEWARK" value="59M9595"/>
+</part>
+<part name="R4" library="adafruit" deviceset="R-US_" device="R0805" value="330">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="CRCW0805330RJNEA"/>
+<attribute name="OC_NEWARK" value="59M6894"/>
+</part>
+<part name="R5" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="MF" value="VISHAY/DALE"/>
+<attribute name="MPN" value="CRCW080510K0FKTA"/>
+<attribute name="OC_NEWARK" value="05F1511"/>
+</part>
+<part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="MF" value="VISHAY/DALE"/>
+<attribute name="MPN" value="CRCW080510K0FKTA"/>
+<attribute name="OC_NEWARK" value="05F1511"/>
+</part>
+<part name="LED3" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="150080RS75000"/>
+<attribute name="OC_NEWARK" value="95W3801"/>
+</part>
+<part name="LED4" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="GREEN">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="150080GS75000"/>
+<attribute name="OC_NEWARK" value="95W3800"/>
+</part>
 <part name="Q2" library="murata-filter" deviceset="CSTCR" device="" technology="6M00G53Z" value="8MHz"/>
-<part name="C3" library="adafruit" deviceset="C-US" device="C0805" value="1uF"/>
-<part name="C5" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
-<part name="C7" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="USB" device="-MICROB"/>
+<part name="C3" library="adafruit" deviceset="C-US" device="C0805" value="1uF">
+<attribute name="MF" value="KEMET"/>
+<attribute name="MPN" value="C0805C105K4RACTU"/>
+<attribute name="OC_NEWARK" value="70K9137"/>
+</part>
+<part name="C5" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="C0805C104K3RACTU"/>
+<attribute name="OC_NEWARK" value="54K3711"/>
+</part>
+<part name="C7" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="C0805C104K3RACTU"/>
+<attribute name="OC_NEWARK" value="54K3711"/>
+</part>
+<part name="JP1" library="SparkFun-Connectors" deviceset="USB" device="-MICROB">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-SPDT" device="-SMD-A">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="33.782" y="174.244" size="1.778" layer="95">SWITCH</text>
 <text x="2.54" y="17.78" size="1.778" layer="95">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
 <text x="2.54" y="15.24" size="1.778" layer="95">http://creativecommons.org/licenses/by-sa/3.0</text>
 <text x="2.54" y="10.16" size="1.778" layer="104">Arduino by Team Arduino, Library Parts from SparkFun</text>
@@ -7506,37 +7816,107 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <instance part="GND4" gate="1" x="142.24" y="134.62"/>
 <instance part="P+1" gate="G$1" x="170.18" y="177.8"/>
 <instance part="GND5" gate="1" x="165.1" y="93.98"/>
-<instance part="FTDI" gate="G$1" x="215.9" y="63.5"/>
+<instance part="FTDI" gate="G$1" x="215.9" y="63.5">
+<attribute name="OC_NEWARK" x="215.9" y="63.5" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="215.9" y="63.5" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="215.9" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+2" gate="G$1" x="154.94" y="132.08"/>
 <instance part="GND9" gate="1" x="109.22" y="55.88"/>
 <instance part="P+5" gate="G$1" x="137.16" y="58.42"/>
 <instance part="GND11" gate="1" x="60.96" y="139.7"/>
-<instance part="SWITCH" gate="G$1" x="38.1" y="170.18" smashed="yes"/>
 <instance part="P+7" gate="G$1" x="170.18" y="73.66"/>
 <instance part="GND3" gate="1" x="170.18" y="48.26"/>
 <instance part="P+3" gate="G$1" x="38.1" y="154.94" rot="R180"/>
 <instance part="GND1" gate="1" x="25.4" y="165.1" rot="R180"/>
-<instance part="MOTORS" gate="G$1" x="40.64" y="111.76"/>
-<instance part="CHARGER" gate="G$1" x="68.58" y="55.88"/>
+<instance part="MOTORS" gate="G$1" x="40.64" y="111.76">
+<attribute name="OC_NEWARK" x="40.64" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="40.64" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="40.64" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="CHARGER" gate="G$1" x="68.58" y="55.88">
+<attribute name="OC_NEWARK" x="68.58" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="68.58" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="68.58" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND6" gate="1" x="40.64" y="48.26"/>
 <instance part="P+4" gate="G$1" x="53.34" y="106.68" rot="R180"/>
-<instance part="JST(PWR)" gate="G$1" x="50.8" y="147.32"/>
-<instance part="LSM303-HEADERS" gate="G$1" x="119.38" y="60.96"/>
-<instance part="SR1" gate="A" x="111.76" y="160.02"/>
+<instance part="JST(PWR)" gate="G$1" x="50.8" y="147.32">
+<attribute name="OC_NEWARK" x="50.8" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="50.8" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="50.8" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LSM303-HEADERS" gate="G$1" x="119.38" y="60.96">
+<attribute name="OC_NEWARK" x="119.38" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="119.38" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="119.38" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SR1" gate="A" x="111.76" y="160.02">
+<attribute name="MF" x="111.76" y="160.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+6" gate="G$1" x="83.82" y="170.18" rot="R180"/>
 <instance part="GND8" gate="1" x="83.82" y="139.7"/>
-<instance part="ATMEGA" gate="1" x="208.28" y="132.08"/>
-<instance part="C6" gate="G$1" x="170.18" y="63.5"/>
-<instance part="R4" gate="G$1" x="48.26" y="40.64"/>
-<instance part="R5" gate="G$1" x="25.4" y="137.16" rot="R270"/>
-<instance part="R6" gate="G$1" x="170.18" y="170.18" rot="R90"/>
-<instance part="LED3" gate="G$1" x="33.02" y="40.64" rot="R90"/>
-<instance part="LED4" gate="G$1" x="25.4" y="154.94" rot="R180"/>
+<instance part="ATMEGA" gate="1" x="208.28" y="132.08">
+<attribute name="OC_NEWARK" x="208.28" y="132.08" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="208.28" y="132.08" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="208.28" y="132.08" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C6" gate="G$1" x="170.18" y="63.5">
+<attribute name="OC_NEWARK" x="170.18" y="63.5" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="170.18" y="63.5" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="170.18" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R4" gate="G$1" x="48.26" y="40.64">
+<attribute name="OC_NEWARK" x="48.26" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="48.26" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="48.26" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R5" gate="G$1" x="25.4" y="137.16" rot="R270">
+<attribute name="OC_NEWARK" x="25.4" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="25.4" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="25.4" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R6" gate="G$1" x="170.18" y="170.18" rot="R90">
+<attribute name="OC_NEWARK" x="170.18" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="170.18" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="170.18" y="170.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LED3" gate="G$1" x="33.02" y="40.64" rot="R90">
+<attribute name="OC_NEWARK" x="33.02" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="33.02" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="33.02" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LED4" gate="G$1" x="25.4" y="154.94" rot="R180">
+<attribute name="OC_NEWARK" x="25.4" y="154.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="25.4" y="154.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="25.4" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="Q2" gate="G$1" x="162.56" y="147.32" rot="R270"/>
-<instance part="C3" gate="G$1" x="45.72" y="58.42" rot="R270"/>
-<instance part="C5" gate="G$1" x="160.02" y="160.02" rot="R270"/>
-<instance part="C7" gate="G$1" x="160.02" y="119.38"/>
-<instance part="JP1" gate="G$1" x="30.48" y="73.66" rot="R180"/>
+<instance part="C3" gate="G$1" x="45.72" y="58.42" rot="R270">
+<attribute name="OC_NEWARK" x="45.72" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="45.72" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="45.72" y="58.42" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C5" gate="G$1" x="160.02" y="160.02" rot="R270">
+<attribute name="OC_NEWARK" x="160.02" y="160.02" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="160.02" y="160.02" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="160.02" y="160.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C7" gate="G$1" x="160.02" y="119.38">
+<attribute name="OC_NEWARK" x="160.02" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="160.02" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="160.02" y="119.38" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="JP1" gate="G$1" x="30.48" y="73.66" rot="R180">
+<attribute name="OC_NEWARK" x="30.48" y="73.66" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="30.48" y="73.66" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="30.48" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="S1" gate="1" x="35.56" y="165.1">
+<attribute name="OC_NEWARK" x="35.56" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="35.56" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="35.56" y="165.1" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7808,15 +8188,14 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pinref part="FTDI" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="165.1" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="157.48" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="157.48" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="157.48" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="132.08" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
-<junction x="38.1" y="157.48"/>
-<pinref part="SWITCH" gate="G$1" pin="5"/>
 <pinref part="P+3" gate="G$1" pin="3.3V"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="S1" gate="1" pin="P"/>
+<wire x1="33.02" y1="157.48" x2="33.02" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
@@ -7900,14 +8279,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 </segment>
 </net>
 <net name="BATT" class="1">
-<segment>
-<wire x1="58.42" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="152.4" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="162.56" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="162.56" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="SWITCH" gate="G$1" pin="6"/>
-<pinref part="JST(PWR)" gate="G$1" pin="PWR"/>
-</segment>
 <segment>
 <label x="20.574" y="41.402" size="1.778" layer="95"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
@@ -8063,6 +8434,14 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pinref part="ATMEGA" gate="1" pin="AREF"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="JST(PWR)" gate="G$1" pin="PWR"/>
+<pinref part="S1" gate="1" pin="S"/>
+<wire x1="58.42" y1="152.4" x2="58.42" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
